@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/*======= Common =======*/
+.clear {
+  clear: both;
+}
+
+/*======= Header =======*/
+.header {
+  height: 46.5px;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.nav {
+  display: inline-block;
+}
+
+.nav,
+.subnav {
+  list-style-type: none;
+}
+
+.nav > li {
+  display: inline-block;
+}
+
+.nav li {
+  position: relative;
+}
+
+.nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.nav li a {
+  padding: 0 24px;
+  text-decoration: none;
+  line-height: 46.5px;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
+.nav .subnav li:hover,
+.nav > li:hover > a {
+  background: #ccc;
+  color: #000;
+}
+
+.nav li:hover .subnav {
+  display: block;
+}
+
+.nav .subnav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav .subnav a {
+  color: #000;
+  padding: 0 12px;
+  line-height: 38.5px;
+}
+
+.nav .nav-arrow-down {
+  font-size: 14px;
+}
+
+.header .search-btn {
+  float: right;
+}
+
+.header .search-icon {
+  color: #fff;
+  font-size: 20px;
+  line-height: 46.5px;
+  padding: 0 21px;
+}
+
+.header .search-btn:hover {
+  background-color: #f44336;
+  cursor: pointer;
+}
+
+/*======= Slider =======*/
+.slider {
+  position: relative;
+  margin-top: 46.5px;
+  padding-top: 50%;
+  background: url("/assets/img/slider-01.jpeg") top center / cover no-repeat;
+}
+
+.slider .text-content {
+  position: absolute;
+  color: #fff;
+  bottom: 47px;
+  text-align: center;
+  width: 100%;
+}
+
+.slider .text-content .text-heading {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.slider .text-content .text-desc {
+  font-size: 15px;
+}
+
+/*======= Content =======*/
+/* About Section */
+.content .content-section {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 0;
+}
+
+.content .section-heading {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
+.content .section-sub-heading {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 25px;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+.content .about-text {
+  margin-top: 15px;
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+.content .member-list {
+  margin-top: 48px;
+}
+
+.content .member-item {
+  float: left;
+  width: calc(100% / 3);
+  text-align: center;
+}
+
+.content .member-name {
+  font-size: 15px;
+}
+
+.content .member-img {
+  margin-top: 15px;
+  height: 240px;
+  width: 220px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+/* Tour Dates */
+/* Tickets */
+.tour-section {
+  background: #000;
+}
+
+.tour-section .section-heading {
+  color: #fff;
+}
+
+.tour-section .section-sub-heading {
+  color: #fff;
+}
+
+.ticket-list {
+  background: #fff;
+  margin-top: 40px;
+}
+
+.ticket-list li {
+  font-size: 15px;
+  padding: 11px 16px;
+  border-bottom: 1px solid #ddd;
+  color: #757575;
+}
+
+.ticket-list .sold-out {
+  background: #f44336;
+  color: #fff;
+  padding: 3px 4px;
+  margin-left: 16px;
+}
+
+.ticket-list .quantity {
+  float: right;
+  background: #000;
+  color: #fff;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  margin-top: -3px;
+}
+/* Tour Dates */
+.tour-section .places-list {
+  margin: 32px -8px 32px;
+}
+
+.tour-section .place-item {
+  float: left;
+  width: calc(100% / 3);
+  padding: 0 8px;
+}
+
+.place-item img {
+  width: 100%;
+  height: 184px;
+  object-fit: cover;
+  display: block;
+}
+
+.place-item img:hover {
+  opacity: 0.6;
+}
+
+.place-item .place-body {
+  background: #fff;
+  padding: 16px;
+  font-size: 15px;
+}
+
+.place-body .place-heading {
+  font-weight: 600;
+}
+
+.place-body .place-time {
+  margin-top: 15px;
+}
+
+.place-body .desc {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.place-body .place-buy-btn {
+  text-decoration: none;
+  padding: 4px 8px;
+  background: #000;
+  color: #fff;
+  padding: 11px 16px;
+  display: inline-block;
+}
+
+.place-body .place-buy-btn:hover {
+  background: #ccc;
+  color: #000;
+}
